@@ -1,0 +1,221 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/main.css')}}">
+  </head>
+
+<body style="background-color: #eee;">
+
+<!--Advert about Coroner-->
+  <div style="  background-image: linear-gradient(#162d70, #162d70, rgb(235, 90, 162)); color: aliceblue; text-align: center; height: 50px;">
+  <h2>#Safehands. Wash Your Hands. Keep Your Distance. Avert the COVID-19 Crisis. <a href="#" class="btn btn-primary btn-sm">Learn More</a></h2>
+  </div>
+
+<!--Logo-->
+  <div class="row" >
+    <div class="col-md-2">
+      <img src="{{url_for('static', filename='logo.png')}}" style="width: 100%;">
+    </div>
+    <div class="col-md-9" >
+      <p style="line-height: 100%; margin-top: 20px;">Contacts: +263 774 592 874 / +263 773 382 126 / +263 (0) 242254187 | Email: sales@mjconsultants.co.zw </p>   
+    </div>
+  </div>
+
+  <!--Nav Bar-->
+  <nav class="navbar bg-theme justify-content-center navbar-expand-lg sticky-top navbar-dark">
+  <!-- Brand -->
+  <a class="navbar-brand" href="#">Logo</a>
+
+  <!-- Links -->
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link 1</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link 2</a>
+    </li>
+
+    <!-- Dropdown -->
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Dropdown link
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Link 1</a>
+        <a class="dropdown-item" href="#">Link 2</a>
+        <a class="dropdown-item" href="#">Link 3</a>
+      </div>
+    </li>
+  </ul>
+  </nav>
+
+  <!--Carousel Slider-->
+  <div id="demo" class="carousel slide" data-ride="carousel">
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{{url_for('static', filename='hi.jpg')}}">
+        <div class="carousel-caption" style="height:50%;">
+          <h2>Los Angeles</h2>
+          <p>We had such a great time in LA!</p>
+        </div>   
+      </div>
+      <div class="carousel-item">
+        <img src="{{url_for('static', filename='hi.jpg')}}">
+        <div class="carousel-caption">
+          <h2>Chicago</h2>
+          <p>Thank you, Chicago!</p>
+        </div>   
+      </div>
+      <div class="carousel-item">
+        <img src="{{url_for('static', filename='hi.jpg')}}">
+        <div class="carousel-caption">
+          <h2>New York</h2>
+          <p>We love the Big Apple!</p>
+        </div>   
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
+
+  <div class="container" style="padding: 50px;">
+  <h3>50+ businesses trust us with their tax matters <a href="#" class="btn btn-outline-secondary btn-md">Learn Why</a></h3> 
+  </div>
+
+  <div class="bg-theme" style=" padding: 5%;">
+    <h1 style="color: #1bb0ce;">Company registration</h1>
+    <h2 style="color: aliceblue;">Registering a company couldn't be faster!</h2>
+    <a href="#" class="btn btn-outline-info btn-lg">Start Registration Now</a>
+  </div>
+
+  <div class="row" style="margin-top: 50px;">
+    <div class="col-sm-4" style="padding-left: 5%;">
+      <h1>Growth Point</h1>
+      <h3>Insights on commerce and economics</h3>
+    </div>
+
+    <div class="col-sm-4" >
+      <img src="{{url_for('static', filename='pn.jpg')}}" width="95%">
+      <h2><a href="#">Tax incentives for Small and Medium Enterprises</a></h2>
+      <a href="#">read more</a>
+    </div>
+
+    <div class="col-sm-4">
+      <img src="{{url_for('static', filename='pm.png')}}" width="95%">
+      <h2><a href="#"> Zimbabwe 2020 Budget Highlights: Things that may affect your business </a></h2>
+      <a href="#">read more</a>
+    </div>
+  </div>
+
+<!--Our Services-->
+  <div class="pd-5-pc bg-sec">
+    <h1>Our Services</h1>
+    <div class="row">
+      <div class="col-md-1"></div>
+
+      <div class="col-md-2" style="padding: 4%;">
+        <img src="{{url_for('static', filename='tx.png')}}" width="100%" >
+        <div class="txt">Digital Marketing</div>
+      </div>
+
+      <div class="col-md-2" style="padding: 4%;">
+        <img src="{{url_for('static', filename='cr.png')}}" width="100%">
+        <div class="txt">Digital Marketing</div>
+      </div>
+
+      <div class="col-md-2" style="padding: 4%;">
+        <img src="{{url_for('static', filename='er.png')}}" width="100%">
+        <div class="txt">Digital Marketing</div>
+      </div>
+
+      <div class="col-md-2" style="padding: 4%;">
+        <img src="{{url_for('static', filename='im.png')}}" width="100%">
+        <div class="txt">Digital Marketing</div>
+      </div>
+
+      <div class="col-md-2" style="padding: 4%;">
+        <img src="{{url_for('static', filename='dm.png')}}" width="100%">
+        <div class="txt">Digital Marketing</div>
+      </div>
+
+      <div class="col-md-1"></div>
+    </div>
+  </div>
+
+<!--Our Clients-->
+<div class="pd-5-pc">
+  <h1>Our Clinets</h1>
+<marquee>
+  <div class="row">
+    <div class="col-md-1" style="margin:10px"><img src="{{url_for('static', filename='cs_adb.jpg')}}" width="100%"></div>
+    <div class="col-md-1" style="margin:10px"><img src="{{url_for('static', filename='cs_adb.jpg')}}" width="100%"></div>
+    <div class="col-md-1" style="margin:10px"><img src="{{url_for('static', filename='cs_adb.jpg')}}" width="100%"></div>
+    <div class="col-md-1" style="margin:10px"><img src="{{url_for('static', filename='cs_adb.jpg')}}" width="100%"></div>
+    <div class="col-md-1" style="margin:10px"><img src="{{url_for('static', filename='cs_adb.jpg')}}" width="100%"></div>
+    <div class="col-md-1" style="margin:10px"><img src="{{url_for('static', filename='cs_adb.jpg')}}" width="100%"></div>
+  </div>
+</marquee>
+</div>
+
+<hr class="new3">
+
+<div id="footer" class="pd-5-pc">
+  <div class="row">
+    <div class="col-md-3">
+      <h2>What We Do</h2>
+      <ul>
+        <li class="foot-lists"><a href="#">Taxation</a></li>
+        <li class="foot-lists"><a href="#">Accounting Services</a></li>
+        <li class="foot-lists"><a href="#">Company Registration</a></li>
+        <li class="foot-lists"><a href="#">Enterprise Solutions</a></li>
+      </ul>
+    </div>
+
+    <div class="col-md-3">
+      <h2>RESOURCES</h2>
+      <ul>
+        <li class="foot-lists"><a href="#"> GrowthPoint</a>
+          <li class="foot-lists"><a href="#">Insights</a></li>
+      </ul>
+    </div>
+
+    <div class="col-md-3">
+      <h2>Coporate</h2>
+      <ul><li class="foot-lists"><a href="#">Who we are</a></li></ul>
+    </div>
+
+    <div class="col-md-3">
+
+    </div>
+  </div>
+  
+
+</div>
+<div class="row">
+  <div class="col-md-6">
+    © 2020, M&J Consultants. All rights reserved.
+  </div>
+  <div class="col-md-6">
+    <a href="#" class="foot-lists">Privacy policy</a>
+    <a href="#" class="foot-lists">Terms of use</a>
+    <a href="#" class="foot-lists">Site map</a>
+  </div>
+</div>
+</body>
+</html>
